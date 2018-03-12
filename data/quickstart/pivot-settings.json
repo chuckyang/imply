@@ -1,0 +1,12 @@
+{
+  "clusters": [
+    {
+      "name": "druid",
+      "type": "druid",
+      "host": "localhost:8082",
+      "title": "Druid",
+      "coordinatorHosts": ["localhost:8081"],
+      "overlordHosts": ["localhost:8090"]
+    }
+  ]
+}

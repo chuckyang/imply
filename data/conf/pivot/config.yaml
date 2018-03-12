@@ -1,0 +1,44 @@
+# The port on which the Pivot server will listen on.
+port: 9095
+
+# Pivot runtime directory
+varDir: var/pivot
+
+#
+# Imply UI state (data cubes and dashboards) can be stored in two ways.
+# Choose just one option and comment out the others.
+#
+#  1) Stored in a file in varDir, editable at runtime with Settings View. Not suitable for running in a cluster.
+#  2) Stored in a database, editable at runtime with Settings View. Works well with a cluster of Pivot servers.
+#
+
+#
+# 1) File-backed settings (not suitable for running in a cluster)
+#
+
+settingsLocation:
+  location: file
+  format: 'json-pretty'
+  initialSettings:
+    connections:
+      - name: druid
+        type: druid
+        host: localhost:8082
+        coordinatorHosts: ["localhost:8081"]
+        overlordHosts: ["localhost:8090"]
+
+#
+# 2) Database-backed settings
+#
+
+# settingsLocation:
+#   location: mysql
+#   uri: 'mysql://user:pw@192.168.99.100:3306/pivot',
+#   table: 'pivot_state'
+#   initialSettings:
+#     connections:
+#       - name: druid
+#         type: druid
+#         host: localhost:8082
+#         coordinatorHosts: ["localhost:8081"]
+#         overlordHosts: ["localhost:8090"]

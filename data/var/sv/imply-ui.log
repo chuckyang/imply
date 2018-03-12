@@ -1,0 +1,46 @@
+[2018-03-12T15:15:33.989Z] Looking for license file at: /opt/imply-2.4.8/conf-quickstart/pivot/pivot-license
+[2018-03-12T15:15:34.014Z] Starting Imply UI v0.4.66 [node v4.8.7]
+Imply UI is listening on address :: port 9095
+[2018-03-12T15:19:43.628Z] Looking for license file at: /opt/imply-2.4.8/conf-quickstart/pivot/pivot-license
+[2018-03-12T15:19:43.635Z] Starting Imply UI v0.4.66 [node v4.8.7]
+Imply UI is listening on address :: port 9095
+[2018-03-12T15:20:48.452Z] Redirecting root to /datasets
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:48 +0000] "GET / HTTP/1.1" 302 62 [rq=84b481bc-dff7-4d80-9179-8963dca31bbb]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:48 +0000] "GET /datasets HTTP/1.1" 200 - [rq=a247a410-19ff-4f45-b7a0-5e7a76c303bb]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:48 +0000] "GET /datasets/assets/datasets.js?v=0.4.66 HTTP/1.1" 200 - [rq=1649241b-7e5f-4a4e-81a7-fb441c290603]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:48 +0000] "GET /datasets/assets/fonts/Open-Sans-600/Open-Sans-600.woff2 HTTP/1.1" 200 10328 [rq=35f40ede-b312-48cc-ae0a-7317d64f29c5]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:48 +0000] "GET /datasets/assets/fonts/Open-Sans-regular/Open-Sans-regular.woff2 HTTP/1.1" 200 10352 [rq=5f579176-2e9d-4c3d-b50a-9dfd9b094ecd]
+[2018-03-12T15:20:49.063Z] Inserting initial 1 row(s) into table pivot-store-clusters
+[2018-03-12T15:20:49.153Z] Initial insert into pivot-store-clusters successful
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:49 +0000] "POST /datasets/connection/load HTTP/1.1" 200 191 [rq=d37365b2-802b-4f69-ae9a-022a15b6d9f2]
+[2018-03-12T15:20:50.344Z] cursed for cluster druid 
+[2018-03-12T15:20:50.357Z] Got supervisors: 
+[2018-03-12T15:20:50.358Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/completeTasks for completeTasks
+[2018-03-12T15:20:50.359Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/runningTasks for runningTasks
+[2018-03-12T15:20:50.360Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/waitingTasks for waitingTasks
+[2018-03-12T15:20:50.360Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/pendingTasks for pendingTasks
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:50 +0000] "POST /datasets/datasource/load HTTP/1.1" 200 18 [rq=ff368acd-95b7-4101-a9c4-54b4eeecabfc]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:53 +0000] "GET /sql HTTP/1.1" 200 - [rq=6dfba4f5-b58f-4191-9fc2-3cb84f902680]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:53 +0000] "GET /sql/assets/sql.js?v=0.4.66 HTTP/1.1" 200 - [rq=446bec2b-6bc8-405b-a16d-d87ebc2ac8b3]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:53 +0000] "GET /sql/assets/fonts/Open-Sans-600/Open-Sans-600.woff2 HTTP/1.1" 200 10328 [rq=ddc14159-b9c9-485e-9ecf-9470d0e70cae]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:53 +0000] "GET /sql/assets/fonts/Open-Sans-regular/Open-Sans-regular.woff2 HTTP/1.1" 200 10352 [rq=822403f9-df24-4ddf-a2d8-bbf5558b499f]
+[2018-03-12T15:20:53.713Z] Getting segment metadata for connection 'druid'
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:53 +0000] "POST /sql/connection/load HTTP/1.1" 200 149 [rq=67b5bb58-046d-4626-9afa-431e29dc155b]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:55 +0000] "GET /pivot HTTP/1.1" 200 - [rq=366dd98d-b318-466d-b38d-4d71ebc0f168]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:55 +0000] "GET /pivot/assets/pivot.js?v=0.4.66 HTTP/1.1" 200 - [rq=2a2d8542-5391-471c-ae37-b931034b95ce]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:55 +0000] "GET /pivot/assets/pivot-main.js HTTP/1.1" 200 - [rq=e8093c4a-5771-4a97-bcd4-ac5f1d0ee4da]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:56 +0000] "POST /pivot/load HTTP/1.1" 200 170 [rq=6e6bcc50-1c28-43b2-a980-774b3cb20a00]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:56 +0000] "GET /pivot/assets/fonts/Open-Sans-600/Open-Sans-600.woff2 HTTP/1.1" 200 10328 [rq=9705a602-6644-4db8-992c-70ee9c392092]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:56 +0000] "GET /pivot/assets/fonts/Open-Sans-regular/Open-Sans-regular.woff2 HTTP/1.1" 200 10352 [rq=b142fcba-b9cb-4343-986c-4abd5f3a8200]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "GET /datasets HTTP/1.1" 304 - [rq=c75c2d47-3013-485a-b9aa-a56a05d2bf08]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "GET /datasets/assets/datasets.js?v=0.4.66 HTTP/1.1" 304 - [rq=4e7d9d0e-b9be-4d66-8fe6-bd6609aaf345]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "GET /datasets/assets/fonts/Open-Sans-600/Open-Sans-600.woff2 HTTP/1.1" 304 - [rq=7a1fa963-ada0-482d-83dd-540620c41522]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "GET /datasets/assets/fonts/Open-Sans-regular/Open-Sans-regular.woff2 HTTP/1.1" 304 - [rq=887826a9-87b9-48d9-979a-778534da8767]
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "POST /datasets/connection/load HTTP/1.1" 200 191 [rq=22c9b618-bf05-4a21-91fb-bac59de5a763]
+[2018-03-12T15:20:57.554Z] cursed for cluster druid 
+[2018-03-12T15:20:57.565Z] Got supervisors: 
+[2018-03-12T15:20:57.565Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/completeTasks for completeTasks
+[2018-03-12T15:20:57.566Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/runningTasks for runningTasks
+[2018-03-12T15:20:57.566Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/waitingTasks for waitingTasks
+[2018-03-12T15:20:57.567Z] user: admin@admin.com requesting baseURLs: http://localhost:8090/druid/indexer/v1/pendingTasks for pendingTasks
+::ffff:192.168.2.78 - - [12/Mar/2018:15:20:57 +0000] "POST /datasets/datasource/load HTTP/1.1" 200 18 [rq=a4221615-4239-4ed9-b1b6-f127272ac379]
