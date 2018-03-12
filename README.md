@@ -13,7 +13,7 @@ docker build -t imply:$implyversion --build-arg implyversion=$implyversion .
 To run the image in quickstart mode (single-machine, non-clustered):
 
 ```
-docker run -p 8081-8110:8081-8110 -p 8200:8200 -p 9095:9095 -d --name imply imply:$implyversion
+sudo docker run --mount type=bind,source=$(pwd)/data,target=/opt/imply-2.4.8 -p 8081-8110:8081-8110 -p 8200:8200 -p 9095:9095 -d --name imply jybaby1027/imply-office
 ```
 
 To load the example data:
